@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="250mm"
+   height="250mm"
+   viewBox="0 0 250 250"
+   version="1.1"
+   id="svg836"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="60.svg">
+  <defs
+     id="defs830" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.47116143"
+     inkscape:cx="394.05093"
+     inkscape:cy="444.43633"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata833">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(110.36905,-39.309509)">
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.483965;stroke-linecap:round;stroke-linejoin:round"
+       id="path1399"
+       cx="14.630951"
+       cy="164.30951"
+       r="125" />
+    <g
+       aria-label="60"
+       id="text1403"
+       style="font-size:208.669px;line-height:1.25;font-family:'DIN 1451 Mittelschrift';-inkscape-font-specification:'DIN 1451 Mittelschrift';fill:#ffffff;fill-opacity:1;stroke-width:0.365632">
+      <path
+         d="M -70.055696,172.60595 -30.115144,92.724845 H -6.3749687 L -37.654942,155.59046 h 0.407557 q 4.686901,-1.93589 11.309697,-1.93589 13.856926,0 24.7590666,9.88324 10.8002513,9.98514 10.8002513,31.58564 0,25.67607 -13.6531479,36.6801 -13.653148,10.90214 -30.261081,10.90214 -15.792821,0 -28.630855,-12.02292 -12.838035,-12.02292 -12.838035,-33.21586 0,-13.55126 5.705793,-24.86096 z m 36.985767,0 q -9.068136,0 -15.181486,5.90957 -6.215239,6.21524 -6.215239,18.54383 0,24.4534 21.396725,24.4534 7.336019,0 14.366372,-5.60391 6.928463,-5.50201 6.928463,-18.84949 0,-12.43048 -6.215239,-18.54383 -6.215239,-5.90957 -15.079596,-5.90957 z"
+         style="font-size:208.669px;fill:#ffffff;fill-opacity:1;stroke-width:0.365632"
+         id="path833" />
+      <path
+         d="m 88.48384,198.28202 v -63.06939 q 0,-10.69837 -5.807682,-16.70983 -5.705794,-6.01146 -15.079597,-6.01146 -9.475692,0 -15.181485,6.01146 -5.705793,6.01146 -5.705793,16.70983 v 63.06939 q 0,10.80025 5.705793,16.81171 5.705793,5.90957 15.181485,5.90957 9.373803,0 15.079597,-5.90957 5.807682,-6.01146 5.807682,-16.81171 z m -63.069392,1.22267 v -65.51473 q 0,-20.47973 12.838034,-31.58564 12.838035,-11.207812 29.344079,-11.207812 16.404156,0 29.24219,11.207812 12.939919,11.10591 12.939919,31.58564 v 65.51473 q 0,20.47972 -12.939919,31.58564 -12.838034,11.10592 -29.24219,11.10592 -16.506044,0 -29.344079,-11.10592 -12.838034,-11.10592 -12.838034,-31.58564 z"
+         style="font-size:208.669px;fill:#ffffff;fill-opacity:1;stroke-width:0.365632"
+         id="path835" />
+    </g>
+  </g>
+</svg>

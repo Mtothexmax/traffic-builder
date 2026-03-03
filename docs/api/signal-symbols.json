@@ -1,0 +1,121 @@
+{
+    "VEHICLE":  {
+                    "amber":  [
+                                  "diagonal-left",
+                                  "diagonal-right",
+                                  "left",
+                                  "right",
+                                  "solid",
+                                  "straight-left",
+                                  "straight-right",
+                                  "straight",
+                                  "warning-bicycle",
+                                  "warning-bus",
+                                  "warning-pedestrian-bicycle",
+                                  "warning-pedestrian",
+                                  "warning-rider",
+                                  "warning-tram",
+                                  "warning"
+                              ],
+                    "red":  [
+                                "diagonal-left",
+                                "diagonal-right",
+                                "left",
+                                "right",
+                                "solid",
+                                "straight-left",
+                                "straight-right",
+                                "straight"
+                            ],
+                    "green":  [
+                                  "diagonal-left",
+                                  "diagonal-right",
+                                  "left",
+                                  "right",
+                                  "solid",
+                                  "straight-left",
+                                  "straight-right",
+                                  "straight"
+                              ],
+                    "all":  [
+                                "lane-change-left",
+                                "lane-change-right",
+                                "lane-closed",
+                                "lane-free",
+                                "speed-40",
+                                "speed-50",
+                                "speed-60"
+                            ]
+                },
+    "PUBLIC_TRANSPORT":  {
+                             "amber":  {
+
+                                       },
+                             "red":  {
+
+                                     },
+                             "green":  {
+
+                                       },
+                             "all":  [
+                                         "A1",
+                                         "circle-solid",
+                                         "F0",
+                                         "F1",
+                                         "F2",
+                                         "F3",
+                                         "F4",
+                                         "F5"
+                                     ]
+                         },
+    "PEDESTRIAN":  {
+                       "amber":  {
+
+                                 },
+                       "red":  [
+                                   "bicycle-left",
+                                   "bicycle-right",
+                                   "bicycle-straight",
+                                   "bicycle",
+                                   "pedestrian-bicycle",
+                                   "pedestrian"
+                               ],
+                       "green":  [
+                                     "bicycle-left",
+                                     "bicycle-right",
+                                     "bicycle-straight",
+                                     "bicycle",
+                                     "pedestrian-bicycle",
+                                     "pedestrian"
+                                 ],
+                       "all":  {
+
+                               }
+                   },
+    "CYCLE":  {
+                  "amber":  [
+                                "bicycle",
+                                "left",
+                                "pedestrian-bicycle",
+                                "right",
+                                "straight"
+                            ],
+                  "red":  [
+                              "bicycle",
+                              "left",
+                              "pedestrian-bicycle",
+                              "right",
+                              "straight"
+                          ],
+                  "green":  [
+                                "bicycle",
+                                "left",
+                                "pedestrian-bicycle",
+                                "right",
+                                "straight"
+                            ],
+                  "all":  {
+
+                          }
+              }
+}
