@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "officeCloneBlazor.Client",
   "resources": {
-    "hash": "sha256-FKoMuCIXzBq3PiIfDj/xj9g2jJsDiNH8uFyRrTi4ojA=",
+    "hash": "sha256-bxFce5obQC8jaRoz2RZk/TTXhTDTjvVb5mt1ORpQpOk=",
     "jsModuleNative": {
       "dotnet.native.8.0.22.2ghoikzwej.js": "sha256-vtotCeXt2UD6oc459laJT32vBgigZ+eLoUmdeFkvYDk="
     },
@@ -31,7 +31,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-6187ynEahDlSLMBvD4vAmiLpZ3clRb5xu6rM7O8AxNo=",
       "Microsoft.JSInterop.wasm": "sha256-MKknoRxUWb9wcnS2dxtVkxmbA39EU5I6HlNCVA9Obns=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-CQVLCKiSxLN5ghyJZG3mhnMGRROdqrbNUjtAXB0nWb8=",
-      "officeCloneBlazor.Client.wasm": "sha256-Mxfb/khHKMhkyVLo224hAO8S9ndCoXg2AO4vDnIzZHE=",
+      "officeCloneBlazor.Client.wasm": "sha256-p/cmP0VhuUzB51tpnqDERlnYyJePEwqpFDbiIyuzlPg=",
       "System.Collections.Concurrent.wasm": "sha256-Cj6hRV1AqGRQCN57fZp62+m+5za2zjtYVDcuudue5g4=",
       "System.Collections.NonGeneric.wasm": "sha256-Ajf9Cu3XjcGiSmNZFhDED78ov8I3d/L99M/m9GenwIs=",
       "System.Collections.wasm": "sha256-MzhhoK6Qj8GwP/DtY0zTKdhWV2iagvcvvrrOxa6784k=",
