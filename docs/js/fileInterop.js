@@ -258,6 +258,278 @@ window.fileInterop.enableSmartHorizontalScroll = function (element) {
     }, { passive: false });
 };
 
+window.fileInterop.enableSignalGroupScrollSync = function (root, container, scrollbar, contentSelector) {
+    if (!container || !scrollbar) return;
+    const selector = contentSelector || ".signal-groups-list";
+    const existing = scrollbar._signalGroupScrollSync;
+    if (existing && existing.container === container) {
+        existing.refresh();
+        return;
+    }
+
+    const scrollbarContent = scrollbar.querySelector(".signal-groups-scrollbar-content");
+    let syncing = false;
+
+    const getContents = () => Array.from(container.querySelectorAll(selector));
+
+    let pendingFrame = 0;
+    const syncSizes = () => {
+        const contents = getContents();
+        let maxWidth = 0;
+        for (const el of contents) {
+            maxWidth = Math.max(maxWidth, el.scrollWidth);
+        }
+        const width = Math.max(maxWidth, scrollbar.clientWidth);
+        if (scrollbarContent) {
+            scrollbarContent.style.width = width + "px";
+        }
+        const shouldShow = maxWidth > scrollbar.clientWidth + 1;
+        if (scrollbar.classList) {
+            scrollbar.classList.toggle("is-hidden", !shouldShow);
+        }
+        if (pendingFrame) {
+            cancelAnimationFrame(pendingFrame);
+            pendingFrame = 0;
+        }
+    };
+
+    const syncFromScrollbar = () => {
+        if (syncing) return;
+        syncing = true;
+        const left = scrollbar.scrollLeft;
+        for (const el of getContents()) {
+            el.scrollLeft = left;
+        }
+        syncing = false;
+    };
+
+    const syncFromContent = (e) => {
+        if (syncing) return;
+        syncing = true;
+        scrollbar.scrollLeft = e.target.scrollLeft;
+        syncing = false;
+    };
+
+    const attachContentListeners = () => {
+        for (const el of getContents()) {
+            el.removeEventListener("scroll", syncFromContent);
+            el.addEventListener("scroll", syncFromContent, { passive: true });
+        }
+    };
+
+    const refresh = () => {
+        attachContentListeners();
+        syncSizes();
+    };
+
+    scrollbar.addEventListener("scroll", syncFromScrollbar, { passive: true });
+
+    const resizeObserver = new ResizeObserver(() => refresh());
+    resizeObserver.observe(container);
+    resizeObserver.observe(scrollbar);
+
+    refresh();
+
+    scrollbar._signalGroupScrollSync = {
+        container,
+        refresh,
+        cleanup: () => {
+            scrollbar.removeEventListener("scroll", syncFromScrollbar);
+            resizeObserver.disconnect();
+        }
+    };
+};
+
+window.fileInterop.portalDropdown = function (dropdown, trigger, options) {
+    if (!dropdown || !trigger) return;
+
+    const opts = options || {};
+    const zIndex = opts.zIndex || 4000;
+    const gutter = opts.gutter || 6;
+
+    const getScrollParents = (el) => {
+        const parents = [];
+        let node = el && el.parentElement;
+        while (node) {
+            const style = window.getComputedStyle(node);
+            const overflow = (style.overflow || "") + (style.overflowX || "") + (style.overflowY || "");
+            if (/(auto|scroll)/.test(overflow)) {
+                parents.push(node);
+            }
+            node = node.parentElement;
+        }
+        return parents;
+    };
+
+    const state = dropdown._portalState || {};
+    if (!dropdown._portalState) {
+        dropdown._portalState = state;
+        state.scrollParents = getScrollParents(trigger);
+        state.onScroll = () => state.position && state.position();
+        state.onResize = () => state.position && state.position();
+        for (const p of state.scrollParents) {
+            p.addEventListener("scroll", state.onScroll, { passive: true });
+        }
+        window.addEventListener("scroll", state.onScroll, { passive: true });
+        window.addEventListener("resize", state.onResize, { passive: true });
+
+        state.observer = new MutationObserver(() => {
+            if (!document.body.contains(dropdown)) {
+                cleanup();
+            }
+        });
+        state.observer.observe(document.body, { childList: true, subtree: true });
+    }
+
+    const cleanup = () => {
+        const st = dropdown._portalState;
+        if (!st) return;
+        for (const p of st.scrollParents || []) {
+            p.removeEventListener("scroll", st.onScroll);
+        }
+        window.removeEventListener("scroll", st.onScroll);
+        window.removeEventListener("resize", st.onResize);
+        if (st.observer) st.observer.disconnect();
+        dropdown._portalState = null;
+    };
+
+    const position = () => {
+        const rect = trigger.getBoundingClientRect();
+        dropdown.style.position = "fixed";
+        dropdown.style.zIndex = String(zIndex);
+        dropdown.style.right = "auto";
+        dropdown.style.bottom = "auto";
+        dropdown.style.maxHeight = "";
+        dropdown.style.overflowY = "";
+
+        // Measure dropdown size after it is in the document.
+        const dropRect = dropdown.getBoundingClientRect();
+        const width = Math.max(dropRect.width || 0, rect.width);
+        dropdown.style.minWidth = width ? width + "px" : "";
+
+        const spaceBelow = window.innerHeight - rect.bottom;
+        const spaceAbove = rect.top;
+        let top;
+        let maxHeight;
+
+        if (spaceBelow >= dropRect.height || spaceBelow >= spaceAbove) {
+            top = rect.bottom + gutter;
+            maxHeight = Math.max(80, spaceBelow - gutter - 8);
+        } else {
+            top = Math.max(8, rect.top - dropRect.height - gutter);
+            maxHeight = Math.max(80, spaceAbove - gutter - 8);
+        }
+
+        let left = rect.left;
+        const maxLeft = Math.max(8, window.innerWidth - (dropRect.width || width) - 8);
+        if (left > maxLeft) left = maxLeft;
+        if (left < 8) left = 8;
+
+        dropdown.style.left = left + "px";
+        dropdown.style.top = top + "px";
+        dropdown.style.maxHeight = maxHeight + "px";
+        dropdown.style.overflowY = "auto";
+    };
+
+    state.position = position;
+
+    if (dropdown.parentElement !== document.body) {
+        document.body.appendChild(dropdown);
+    }
+
+    position();
+};
+
+window.fileInterop.portalizeOpenDropdowns = function (root, dropdownSelector, triggerSelector) {
+    const scope = root || document;
+    const dropdowns = Array.from(scope.querySelectorAll(dropdownSelector || ".custom-dropdown-list"));
+    for (const dropdown of dropdowns) {
+        if (!dropdown._portalOrigin) {
+            dropdown._portalOrigin = dropdown.parentElement;
+        }
+        const origin = dropdown._portalOrigin || dropdown.parentElement;
+        let trigger = null;
+        if (origin) {
+            trigger = origin.querySelector(triggerSelector || ".inline-dropdown-trigger.open");
+        }
+        if (!trigger) {
+            const prev = dropdown.previousElementSibling;
+            if (prev && prev.matches && prev.matches(triggerSelector || ".inline-dropdown-trigger")) {
+                trigger = prev;
+            }
+        }
+        if (!trigger) continue;
+        window.fileInterop.portalDropdown(dropdown, trigger, {});
+    }
+};
+
+window.fileInterop.enableMiddleMousePan = function (element, dotNetHelper) {
+    if (!element || !dotNetHelper) return;
+    if (element._middlePan) return;
+
+    const state = { active: false };
+
+    const onDown = (e) => {
+        if (e.button !== 1) return;
+        e.preventDefault();
+        state.active = true;
+        dotNetHelper.invokeMethodAsync("BeginMiddlePan", e.clientX, e.clientY);
+    };
+
+    const onUp = (e) => {
+        if (!state.active) return;
+        if (e.button !== 1) return;
+        e.preventDefault();
+        state.active = false;
+        dotNetHelper.invokeMethodAsync("EndMiddlePan");
+    };
+
+    element.addEventListener("mousedown", onDown, true);
+    window.addEventListener("mouseup", onUp, { passive: false });
+
+    element._middlePan = {
+        cleanup: () => {
+            element.removeEventListener("mousedown", onDown, true);
+            window.removeEventListener("mouseup", onUp);
+        }
+    };
+};
+
+window.fileInterop.enablePanButtons = function (element, dotNetHelper, buttons) {
+    if (!element || !dotNetHelper) return;
+    if (element._panButtons) return;
+
+    const activeButtons = Array.isArray(buttons) ? buttons : [1, 2];
+    const state = { active: false };
+
+    const onDown = (e) => {
+        if (!activeButtons.includes(e.button)) return;
+        e.preventDefault();
+        state.active = true;
+        dotNetHelper.invokeMethodAsync("BeginPan", e.clientX, e.clientY);
+    };
+
+    const onUp = (e) => {
+        if (!state.active) return;
+        if (!activeButtons.includes(e.button)) return;
+        e.preventDefault();
+        state.active = false;
+        dotNetHelper.invokeMethodAsync("EndPan");
+    };
+
+    element.addEventListener("mousedown", onDown, true);
+    window.addEventListener("mouseup", onUp, { passive: false });
+    window.addEventListener("contextmenu", onUp, { passive: false });
+
+    element._panButtons = {
+        cleanup: () => {
+            element.removeEventListener("mousedown", onDown, true);
+            window.removeEventListener("mouseup", onUp);
+            window.removeEventListener("contextmenu", onUp);
+        }
+    };
+};
+
 window.fileInterop.stopWheelPropagation = function (element) {
     if (!element) return;
     element.addEventListener('wheel', function (e) {
@@ -508,5 +780,36 @@ window.fileInterop.beginPointDrag = function (svgElement, dotNetHelper, pointerI
         onMove(fakeEvent);
     }
 
-    window.fileInterop._pointDragState = { cleanup };
+window.fileInterop._pointDragState = { cleanup };
+};
+
+window.fileInterop.clearStageDefinitionHover = function (container) {
+    if (!container) return;
+    const cells = container.querySelectorAll("td.state-cell.hover-target, td.state-cell.hover-conflict, td.state-cell.hover-nonconflict");
+    cells.forEach((cell) => {
+        cell.classList.remove("hover-target", "hover-conflict", "hover-nonconflict");
+    });
+};
+
+window.fileInterop.highlightStageDefinitionColumn = function (container, stageNumber, hoveredSg, conflictSgs, nonConflictSgs) {
+    if (!container) return;
+    window.fileInterop.clearStageDefinitionHover(container);
+
+    const conflictSet = new Set(conflictSgs || []);
+    const targetStage = String(stageNumber);
+    const targetSg = String(hoveredSg);
+
+    const cells = container.querySelectorAll("td.state-cell[data-stage]");
+    cells.forEach((cell) => {
+        if (cell.getAttribute("data-stage") !== targetStage) return;
+        const sg = cell.getAttribute("data-sg");
+        if (sg === targetSg) {
+            cell.classList.add("hover-target");
+            return;
+        }
+        const sgNum = parseInt(sg || "", 10);
+        if (Number.isFinite(sgNum) && conflictSet.has(sgNum)) {
+            cell.classList.add("hover-conflict");
+        }
+    });
 };
