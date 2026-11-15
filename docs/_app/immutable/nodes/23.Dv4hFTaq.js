@@ -1,0 +1,1 @@
+import{it as e,r as t,rt as n}from"../chunks/CwxdPxhh.js";import{t as r}from"../chunks/yJrXMzwP.js";import"../chunks/xihTtKlq.js";import{n as i}from"../chunks/B9iRVal3.js";function a(a,o){e(o,!0),t(()=>{r(i(`/topology?tab=preview`),{replaceState:!0})}),n()}export{a as component};
