@@ -1,0 +1,1 @@
+import"../chunks/CwxdPxhh.js";import"../chunks/xihTtKlq.js";import{t as e}from"../chunks/BTRbfI49.js";function t(t){e(t,{title:`Settings`,hint:`Units, default times and appearance.`})}export{t as component};

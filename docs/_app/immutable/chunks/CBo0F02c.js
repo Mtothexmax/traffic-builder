@@ -1,0 +1,1 @@
+function e(e){return e.motorcycles+e.cars+e.trucks+e.trucksLong}function t(e,t){if(e.x*t.x+e.y*t.y<-.5)return`U-turn`;let n=e.x*t.y-e.y*t.x;return n>.5?`Right`:n<-.5?`Left`:`Straight`}export{e as n,t};

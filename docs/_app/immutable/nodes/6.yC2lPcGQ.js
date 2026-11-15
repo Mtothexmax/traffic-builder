@@ -1,0 +1,1 @@
+import"../chunks/CwxdPxhh.js";import"../chunks/xihTtKlq.js";import{t as e}from"../chunks/BTRbfI49.js";function t(t){e(t,{title:`HBS`,hint:`Capacity calculation for the junction (HBS/HCM style).`})}export{t as component};

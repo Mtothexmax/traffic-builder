@@ -1,0 +1,1 @@
+import"../chunks/CwxdPxhh.js";import"../chunks/xihTtKlq.js";import{t as e}from"../chunks/BTRbfI49.js";function t(t){e(t,{title:`Release`,hint:`Version the controller configuration and hand it over.`})}export{t as component};

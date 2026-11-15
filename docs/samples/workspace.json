@@ -1,0 +1,5616 @@
+{
+  "format": "trafficBuilder.workspace",
+  "version": 1,
+  "name": "Workspace",
+  "controllers": [
+    {
+      "project": {
+        "id": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "name": "Controller 1",
+        "description": "# Project Readme\nWelcome to your traffic light controller project.",
+        "updatedAt": "2026-11-15T08:56:16.668Z",
+        "junctionId": "j1"
+      },
+      "junctions": [
+        {
+          "id": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+          "name": "J1",
+          "center": {
+            "x": -14.5,
+            "y": 0.5
+          },
+          "legs": [
+            {
+              "id": "f8290239-aa70-4c9b-a58c-21379925d2e9",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Arm 1",
+              "number": 1,
+              "start": {
+                "x": 292.99368449877755,
+                "y": 175.42297033684773
+              },
+              "end": {
+                "x": 78.5,
+                "y": 47
+              },
+              "lanesIn": [
+                "37737414-bf5a-4750-8cfd-2d9ba577e1a1",
+                "ad72f16b-d628-46b6-b695-80279a80f40e"
+              ],
+              "lanesOut": [
+                "3c2bf06b-dd5f-4e35-875f-988481c7573c"
+              ]
+            },
+            {
+              "id": "d3efd2d3-ed81-4785-9c7b-0779018791eb",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Arm 2",
+              "number": 2,
+              "start": {
+                "x": -324.41579390205914,
+                "y": -170.0820667059339
+              },
+              "end": {
+                "x": -103,
+                "y": -54
+              },
+              "lanesIn": [
+                "4dfdde61-0854-4e85-8a82-034d705bc1d1"
+              ],
+              "lanesOut": [
+                "9f60efaa-c51b-49e9-85cc-f95c0004e40d"
+              ]
+            },
+            {
+              "id": "7c01af95-a423-44b8-b4af-4d9e8f6f2cf7",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Arm 3",
+              "number": 3,
+              "start": {
+                "x": 246.91210502388512,
+                "y": -290.4848294398648
+              },
+              "end": {
+                "x": 85,
+                "y": -100
+              },
+              "lanesIn": [
+                "6d805b73-f450-44d9-bcc9-aadefba5cf69"
+              ],
+              "lanesOut": [
+                "9b9e2fa1-6206-4a57-a948-5e0b7d5bb58f"
+              ]
+            },
+            {
+              "id": "af5d6057-5fd9-47a7-b7b6-07f79e8d2e3c",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Arm 4",
+              "number": 4,
+              "start": {
+                "x": -235.34101647063684,
+                "y": 352.4018329534407
+              },
+              "end": {
+                "x": -96.5,
+                "y": 144.5
+              },
+              "lanesIn": [
+                "87205198-e268-41f1-bd12-6f9147f36d31"
+              ],
+              "lanesOut": [
+                "50b252bf-095a-4b77-b1d7-484f4f25d6c6"
+              ]
+            }
+          ],
+          "lanes": [
+            {
+              "id": "37737414-bf5a-4750-8cfd-2d9ba577e1a1",
+              "legId": "f8290239-aa70-4c9b-a58c-21379925d2e9",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 2.27269840179855
+              },
+              "d2": {
+                "x": 0,
+                "y": 2.27269840179855
+              }
+            },
+            {
+              "id": "3c2bf06b-dd5f-4e35-875f-988481c7573c",
+              "legId": "f8290239-aa70-4c9b-a58c-21379925d2e9",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "4dfdde61-0854-4e85-8a82-034d705bc1d1",
+              "legId": "d3efd2d3-ed81-4785-9c7b-0779018791eb",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "9f60efaa-c51b-49e9-85cc-f95c0004e40d",
+              "legId": "d3efd2d3-ed81-4785-9c7b-0779018791eb",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 2,
+                "y": -7
+              },
+              "d2": {
+                "x": 2,
+                "y": -7
+              }
+            },
+            {
+              "id": "6d805b73-f450-44d9-bcc9-aadefba5cf69",
+              "legId": "7c01af95-a423-44b8-b4af-4d9e8f6f2cf7",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": -1,
+                "y": -14.5
+              },
+              "d2": {
+                "x": -1,
+                "y": -14.5
+              }
+            },
+            {
+              "id": "9b9e2fa1-6206-4a57-a948-5e0b7d5bb58f",
+              "legId": "7c01af95-a423-44b8-b4af-4d9e8f6f2cf7",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "87205198-e268-41f1-bd12-6f9147f36d31",
+              "legId": "af5d6057-5fd9-47a7-b7b6-07f79e8d2e3c",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "50b252bf-095a-4b77-b1d7-484f4f25d6c6",
+              "legId": "af5d6057-5fd9-47a7-b7b6-07f79e8d2e3c",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "ad72f16b-d628-46b6-b695-80279a80f40e",
+              "legId": "f8290239-aa70-4c9b-a58c-21379925d2e9",
+              "direction": "in",
+              "label": "Approach 2",
+              "widthM": 1,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 7.40473068669678,
+                "y": -2.729177849057308
+              },
+              "d2": {
+                "x": 7.404730686696723,
+                "y": -2.729177849057301
+              }
+            }
+          ],
+          "connectors": [
+            {
+              "id": "f400226c-f9ff-47a8-aba9-e6791d4e7086",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "37737414-bf5a-4750-8cfd-2d9ba577e1a1",
+              "toLaneId": "9f60efaa-c51b-49e9-85cc-f95c0004e40d",
+              "signalGroupIds": [
+                "da37ada3-54fd-4fab-a0ff-e3c2a430835f"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "775f2092-0df7-41bd-ae09-23cf9a3d19a2",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "4dfdde61-0854-4e85-8a82-034d705bc1d1",
+              "toLaneId": "3c2bf06b-dd5f-4e35-875f-988481c7573c",
+              "signalGroupIds": [
+                "20d159f7-f5cf-41de-9883-0b4ffee0fc71"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "92333d4d-1157-4465-92bb-c3aaee95727c",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "6d805b73-f450-44d9-bcc9-aadefba5cf69",
+              "toLaneId": "50b252bf-095a-4b77-b1d7-484f4f25d6c6",
+              "signalGroupIds": [
+                "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "5f68ce96-74af-41c6-8a84-0e90cead05f0",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "87205198-e268-41f1-bd12-6f9147f36d31",
+              "toLaneId": "9b9e2fa1-6206-4a57-a948-5e0b7d5bb58f",
+              "signalGroupIds": [
+                "3ef81775-0e8d-4289-ab98-20ed23c4e0d6"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "0320c24b-c206-416f-9683-a6994a96603f",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Approach 2 → Exit 1",
+              "fromLaneId": "ad72f16b-d628-46b6-b695-80279a80f40e",
+              "toLaneId": "9f60efaa-c51b-49e9-85cc-f95c0004e40d",
+              "signalGroupIds": [
+                "4464ef40-6ae9-4130-8515-c77121120d06"
+              ],
+              "widthM": 3,
+              "tweak": -61,
+              "via": [
+                {
+                  "x": 58.5,
+                  "y": -47
+                }
+              ]
+            },
+            {
+              "id": "2f07c6d0-b09f-4b88-acf5-2a54126d9878",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "6d805b73-f450-44d9-bcc9-aadefba5cf69",
+              "toLaneId": "9f60efaa-c51b-49e9-85cc-f95c0004e40d",
+              "signalGroupIds": [],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            }
+          ],
+          "crossings": [
+            {
+              "id": "f80b18dd-4eb6-4425-8e58-76d9a83c2a40",
+              "junctionId": "9c2f7792-bf14-462d-a1d8-58c3103996ed",
+              "label": "Crossing 1",
+              "legId": "7c01af95-a423-44b8-b4af-4d9e8f6f2cf7",
+              "at": 268.2,
+              "lateral": 6.5,
+              "width": 189.1,
+              "signalGroupId": null
+            }
+          ],
+          "islands": []
+        }
+      ],
+      "signalGroups": [
+        {
+          "id": "da37ada3-54fd-4fab-a0ff-e3c2a430835f",
+          "name": "SG1",
+          "type": "vehicle",
+          "number": 1,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 170.7,
+            "y": -41
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "20d159f7-f5cf-41de-9883-0b4ffee0fc71",
+          "name": "SG2",
+          "type": "vehicle",
+          "number": 2,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": -157.5,
+            "y": 7.3
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d",
+          "name": "SG3",
+          "type": "vehicle",
+          "number": 3,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 59,
+            "y": -192.3
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "3ef81775-0e8d-4289-ab98-20ed23c4e0d6",
+          "name": "SG4",
+          "type": "vehicle",
+          "number": 4,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": -27.3,
+            "y": 184.2
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "4464ef40-6ae9-4130-8515-c77121120d06",
+          "name": "SG5",
+          "type": "cycle",
+          "number": 5,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 193.3466359675307,
+            "y": -36.77153785634073
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 2,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        }
+      ],
+      "detectors": [
+        {
+          "id": "0579b70b-fcc9-44c6-a81f-f481c5a79662",
+          "name": "D1",
+          "type": "inductiveLoop",
+          "pos": {
+            "x": 124.9999853119383,
+            "y": 24.545455555843546
+          },
+          "laneId": "37737414-bf5a-4750-8cfd-2d9ba577e1a1",
+          "signalGroupId": null,
+          "loopHeightM": 2,
+          "distanceM": 1
+        }
+      ],
+      "reportingPoints": [],
+      "refPoints": [
+        {
+          "canvas": {
+            "x": 221,
+            "y": -39
+          },
+          "lat": 48.960448015235066,
+          "lon": 11.675461120249405,
+          "set": true
+        },
+        {
+          "canvas": {
+            "x": 328,
+            "y": -43
+          },
+          "lat": 48.96049907142977,
+          "lon": 11.675536201869726,
+          "set": true
+        }
+      ],
+      "background": {
+        "image": null,
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0,
+        "opacity": 0.6,
+        "visible": true,
+        "locked": false
+      },
+      "matrices": {
+        "conflict": {
+          "da37ada3-54fd-4fab-a0ff-e3c2a430835f>8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": "conflict",
+          "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d>da37ada3-54fd-4fab-a0ff-e3c2a430835f": "conflict",
+          "da37ada3-54fd-4fab-a0ff-e3c2a430835f>3ef81775-0e8d-4289-ab98-20ed23c4e0d6": "conflict",
+          "3ef81775-0e8d-4289-ab98-20ed23c4e0d6>da37ada3-54fd-4fab-a0ff-e3c2a430835f": "conflict",
+          "da37ada3-54fd-4fab-a0ff-e3c2a430835f>4464ef40-6ae9-4130-8515-c77121120d06": "conflict",
+          "4464ef40-6ae9-4130-8515-c77121120d06>da37ada3-54fd-4fab-a0ff-e3c2a430835f": "conflict",
+          "20d159f7-f5cf-41de-9883-0b4ffee0fc71>8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": "conflict",
+          "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d>20d159f7-f5cf-41de-9883-0b4ffee0fc71": "conflict",
+          "20d159f7-f5cf-41de-9883-0b4ffee0fc71>3ef81775-0e8d-4289-ab98-20ed23c4e0d6": "conflict",
+          "3ef81775-0e8d-4289-ab98-20ed23c4e0d6>20d159f7-f5cf-41de-9883-0b4ffee0fc71": "conflict",
+          "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d>4464ef40-6ae9-4130-8515-c77121120d06": "conflict",
+          "4464ef40-6ae9-4130-8515-c77121120d06>8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": "conflict",
+          "3ef81775-0e8d-4289-ab98-20ed23c4e0d6>4464ef40-6ae9-4130-8515-c77121120d06": "conflict",
+          "4464ef40-6ae9-4130-8515-c77121120d06>3ef81775-0e8d-4289-ab98-20ed23c4e0d6": "conflict"
+        },
+        "intergreen": {
+          "da37ada3-54fd-4fab-a0ff-e3c2a430835f>8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": 4,
+          "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d>da37ada3-54fd-4fab-a0ff-e3c2a430835f": 4,
+          "da37ada3-54fd-4fab-a0ff-e3c2a430835f>3ef81775-0e8d-4289-ab98-20ed23c4e0d6": 3,
+          "3ef81775-0e8d-4289-ab98-20ed23c4e0d6>da37ada3-54fd-4fab-a0ff-e3c2a430835f": 4,
+          "20d159f7-f5cf-41de-9883-0b4ffee0fc71>8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": 3,
+          "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d>20d159f7-f5cf-41de-9883-0b4ffee0fc71": 4,
+          "20d159f7-f5cf-41de-9883-0b4ffee0fc71>3ef81775-0e8d-4289-ab98-20ed23c4e0d6": 4,
+          "3ef81775-0e8d-4289-ab98-20ed23c4e0d6>20d159f7-f5cf-41de-9883-0b4ffee0fc71": 3,
+          "da37ada3-54fd-4fab-a0ff-e3c2a430835f>4464ef40-6ae9-4130-8515-c77121120d06": 5,
+          "4464ef40-6ae9-4130-8515-c77121120d06>da37ada3-54fd-4fab-a0ff-e3c2a430835f": 5,
+          "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d>4464ef40-6ae9-4130-8515-c77121120d06": 1,
+          "4464ef40-6ae9-4130-8515-c77121120d06>8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": 4,
+          "3ef81775-0e8d-4289-ab98-20ed23c4e0d6>4464ef40-6ae9-4130-8515-c77121120d06": 4,
+          "4464ef40-6ae9-4130-8515-c77121120d06>3ef81775-0e8d-4289-ab98-20ed23c4e0d6": 3
+        },
+        "offset": {}
+      },
+      "intergreenSettings": {
+        "vehicleLengthCarM": 6,
+        "vehicleLengthHgvM": 10,
+        "vehicleLengthBicycleM": 2,
+        "speedCarMs": 13.88,
+        "speedTurnMs": 8.33,
+        "speedPedestrianMs": 1.2,
+        "speedBicycleMs": 4,
+        "yellowTimeS": 3
+      },
+      "stages": [
+        {
+          "id": "d1aaef62-cc9a-459f-bbad-bf719b21d1a7",
+          "name": "Stage 1",
+          "greenGroupIds": [
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f",
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71"
+          ],
+          "locked": false,
+          "durationS": 10,
+          "minS": 5,
+          "maxS": 60,
+          "signalGroupStates": {
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f": "free",
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71": "free",
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": "locked",
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6": "locked",
+            "4464ef40-6ae9-4130-8515-c77121120d06": "locked"
+          }
+        },
+        {
+          "id": "1d53080b-d5c3-4d01-b0ac-7e1dd44f2184",
+          "name": "Stage 2",
+          "greenGroupIds": [
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71",
+            "4464ef40-6ae9-4130-8515-c77121120d06"
+          ],
+          "locked": false,
+          "durationS": 10,
+          "minS": 5,
+          "maxS": 60,
+          "signalGroupStates": {
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f": "locked",
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71": "free",
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": "locked",
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6": "locked",
+            "4464ef40-6ae9-4130-8515-c77121120d06": "free"
+          }
+        },
+        {
+          "id": "4c0c4958-cdf4-40d6-8837-1b63e5b16edb",
+          "name": "Stage 3",
+          "greenGroupIds": [
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d",
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6"
+          ],
+          "locked": false,
+          "durationS": 10,
+          "minS": 5,
+          "maxS": 60,
+          "signalGroupStates": {
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f": "locked",
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71": "locked",
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": "free",
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6": "free",
+            "4464ef40-6ae9-4130-8515-c77121120d06": "locked"
+          }
+        }
+      ],
+      "transitions": [
+        {
+          "id": "bd0760c1-1eeb-48c2-8099-e75162bc0d66",
+          "fromStageId": "d1aaef62-cc9a-459f-bbad-bf719b21d1a7",
+          "toStageId": "1d53080b-d5c3-4d01-b0ac-7e1dd44f2184",
+          "intergreenS": 0,
+          "durationS": 6,
+          "switchingTimes": {
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f": 5,
+            "4464ef40-6ae9-4130-8515-c77121120d06": 0
+          },
+          "switchingPoints": {
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "4464ef40-6ae9-4130-8515-c77121120d06": [
+              {
+                "chambers": [
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 0
+              }
+            ]
+          },
+          "calculated": true,
+          "logicConditions": []
+        },
+        {
+          "id": "518a19f8-03e4-48a9-b0f6-c954f859d1e1",
+          "fromStageId": "1d53080b-d5c3-4d01-b0ac-7e1dd44f2184",
+          "toStageId": "4c0c4958-cdf4-40d6-8837-1b63e5b16edb",
+          "intergreenS": 4,
+          "durationS": 17,
+          "switchingTimes": {
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71": 5,
+            "4464ef40-6ae9-4130-8515-c77121120d06": 0,
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": 11,
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6": 12
+          },
+          "switchingPoints": {
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "4464ef40-6ae9-4130-8515-c77121120d06": [
+              {
+                "chambers": [
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              }
+            ],
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 9000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 11000
+              }
+            ],
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ]
+          },
+          "calculated": true,
+          "logicConditions": []
+        },
+        {
+          "id": "5fd57392-de82-4c4f-938c-b1bd093af6ec",
+          "fromStageId": "4c0c4958-cdf4-40d6-8837-1b63e5b16edb",
+          "toStageId": "d1aaef62-cc9a-459f-bbad-bf719b21d1a7",
+          "intergreenS": 4,
+          "durationS": 17,
+          "switchingTimes": {
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": 5,
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6": 5,
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f": 12,
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71": 12
+          },
+          "switchingPoints": {
+            "8bcdf71f-9f05-49b2-a26e-d13197ce8e3d": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "3ef81775-0e8d-4289-ab98-20ed23c4e0d6": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "da37ada3-54fd-4fab-a0ff-e3c2a430835f": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ],
+            "20d159f7-f5cf-41de-9883-0b4ffee0fc71": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ]
+          },
+          "calculated": true,
+          "logicConditions": []
+        }
+      ],
+      "transitionConditionInputs": [],
+      "volumeFlows": [],
+      "greenWaves": [],
+      "signalGroupTemplates": {
+        "vehicle": {
+          "id": "template-vehicle",
+          "name": "Vehicle",
+          "type": "vehicle",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "pedestrian": {
+          "id": "template-pedestrian",
+          "name": "Pedestrian",
+          "type": "pedestrian",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 2,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "cycle": {
+          "id": "template-cycle",
+          "name": "Cyclist",
+          "type": "cycle",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 2,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "publicTransport": {
+          "id": "template-publicTransport",
+          "name": "Public Transport",
+          "type": "publicTransport",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [],
+          "lockedSignalSequence": [],
+          "normalSignalSequence": [],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        }
+      },
+      "programs": [
+        {
+          "id": "87610218-5445-4664-8e04-c98af051f778",
+          "number": 3,
+          "name": "Program 3 (Auto)",
+          "cycleTimeS": 90,
+          "offsetS": 0,
+          "stages": [
+            {
+              "stageId": "d1aaef62-cc9a-459f-bbad-bf719b21d1a7",
+              "greenS": 10
+            },
+            {
+              "stageId": "1d53080b-d5c3-4d01-b0ac-7e1dd44f2184",
+              "greenS": 10
+            },
+            {
+              "stageId": "4c0c4958-cdf4-40d6-8837-1b63e5b16edb",
+              "greenS": 30
+            }
+          ]
+        }
+      ],
+      "trafficLogic": {
+        "source": "// Verkehrsabhängige Logik – wird jeden Takt (100 ms) ausgewertet.\nconst MIN_GREEN = 8;     // Sekunden\nconst MAX_GREEN = 40;\nconst GAP_LIMIT = 3.0;   // Zeitlücke für Grünende\nvar extensions = 0;\n\nlogic {\n  if stage == Stage_1 {\n    if stageTime < MIN_GREEN {\n      hold;\n    } else if stageTime >= MAX_GREEN {\n      switch Stage_2;\n    } else if gap(D1) < GAP_LIMIT {\n      extend SG1 by 1;\n      extensions = extensions + 1;\n    } else {\n      switch Stage_2;\n    }\n  } else if stage == Stage_2 and stageTime >= MIN_GREEN {\n    if occupied(D1) or count(D1) >= 3 {\n      switch Stage_1;\n    }\n  }\n}\n"
+      },
+      "visualSettings": {
+        "defaultsInitialized": true,
+        "profiles": [
+          {
+            "id": "vis-red",
+            "name": "Red",
+            "signalState": {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "MiddleHorizontalLine",
+                "color": "#ff2816",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              }
+            ]
+          },
+          {
+            "id": "vis-amber",
+            "name": "Amber",
+            "signalState": {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#f7b500",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          },
+          {
+            "id": "vis-green",
+            "name": "Green",
+            "signalState": {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "TopBorder",
+                "color": "#00962a",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#00962a",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#00962a",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#00962a",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "DurationTextCentered",
+                "color": "#00962a",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Filled",
+                "color": "#004213",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              }
+            ]
+          },
+          {
+            "id": "vis-redamber",
+            "name": "RedAmber",
+            "signalState": {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#f7b500",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "MiddleHorizontalLine",
+                "color": "#c70001",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 7,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          },
+          {
+            "id": "vis-dark",
+            "name": "Dark",
+            "signalState": {
+              "chambers": [
+                "off",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#3d3d3d",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "DiagonalMirroredY",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 7,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "project": {
+        "id": "25171898-6837-4d48-84b0-c8857eeee186",
+        "name": "Controller 2",
+        "description": "# Project Readme\nWelcome to your traffic light controller project.",
+        "updatedAt": "2026-11-13T13:20:39.695Z",
+        "junctionId": "j1"
+      },
+      "junctions": [
+        {
+          "id": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+          "name": "J1",
+          "center": {
+            "x": 516,
+            "y": 91
+          },
+          "legs": [
+            {
+              "id": "1939c133-a7dd-4af2-b67f-187da9a72e2b",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 1",
+              "number": 1,
+              "start": {
+                "x": 765.3829987672394,
+                "y": 327.547109124808
+              },
+              "end": {
+                "x": 584,
+                "y": 155.5
+              },
+              "lanesIn": [
+                "e9ea3eab-a0a6-4369-8f31-0e823a85823c"
+              ],
+              "lanesOut": [
+                "a64a7061-21a9-4e7d-8361-ecc69d0333d2"
+              ]
+            },
+            {
+              "id": "a81dae0c-0873-4cf5-aa53-5b0849094b09",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 2",
+              "number": 2,
+              "start": {
+                "x": 256.860772043835,
+                "y": -231.34391770157106
+              },
+              "end": {
+                "x": 413.5,
+                "y": -36.5
+              },
+              "lanesIn": [
+                "f08e1b6d-7af3-4519-8f81-5fcac7303c42"
+              ],
+              "lanesOut": [
+                "6a8fd586-ab15-4a91-94c3-9aa30eee46bd"
+              ]
+            },
+            {
+              "id": "bca1dc02-bd50-4431-ac7c-89860fc6e921",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 3",
+              "number": 3,
+              "start": {
+                "x": 847.2692960153736,
+                "y": -189.57684146497843
+              },
+              "end": {
+                "x": 656.5,
+                "y": -28
+              },
+              "lanesIn": [
+                "f0c00f0b-0eb4-463d-9415-397cd6daabde"
+              ],
+              "lanesOut": [
+                "0df49202-5e22-45a7-92a9-24004cb17d07"
+              ]
+            },
+            {
+              "id": "c0452c55-005c-4fcc-a643-6c07df2fe97e",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 4",
+              "number": 4,
+              "start": {
+                "x": 162.66966502877358,
+                "y": 305.0244681366927
+              },
+              "end": {
+                "x": 376.5,
+                "y": 175.5
+              },
+              "lanesIn": [
+                "2f72aa78-df36-4ef1-8225-61e981b09ac0"
+              ],
+              "lanesOut": [
+                "ca6bed9a-5fcd-451a-b296-3fe25779ba7a"
+              ]
+            }
+          ],
+          "lanes": [
+            {
+              "id": "e9ea3eab-a0a6-4369-8f31-0e823a85823c",
+              "legId": "1939c133-a7dd-4af2-b67f-187da9a72e2b",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "a64a7061-21a9-4e7d-8361-ecc69d0333d2",
+              "legId": "1939c133-a7dd-4af2-b67f-187da9a72e2b",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "f08e1b6d-7af3-4519-8f81-5fcac7303c42",
+              "legId": "a81dae0c-0873-4cf5-aa53-5b0849094b09",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "6a8fd586-ab15-4a91-94c3-9aa30eee46bd",
+              "legId": "a81dae0c-0873-4cf5-aa53-5b0849094b09",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "f0c00f0b-0eb4-463d-9415-397cd6daabde",
+              "legId": "bca1dc02-bd50-4431-ac7c-89860fc6e921",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "0df49202-5e22-45a7-92a9-24004cb17d07",
+              "legId": "bca1dc02-bd50-4431-ac7c-89860fc6e921",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "2f72aa78-df36-4ef1-8225-61e981b09ac0",
+              "legId": "c0452c55-005c-4fcc-a643-6c07df2fe97e",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "ca6bed9a-5fcd-451a-b296-3fe25779ba7a",
+              "legId": "c0452c55-005c-4fcc-a643-6c07df2fe97e",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "connectors": [
+            {
+              "id": "5351e48f-3904-4ed6-b6e7-3ba121b2bd2b",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "2f72aa78-df36-4ef1-8225-61e981b09ac0",
+              "toLaneId": "0df49202-5e22-45a7-92a9-24004cb17d07",
+              "signalGroupIds": [
+                "d0b4afbe-2191-4f49-97f5-33365cc35cd7"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "24dbba16-1a85-42b3-840e-352eaf2eb699",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "e9ea3eab-a0a6-4369-8f31-0e823a85823c",
+              "toLaneId": "6a8fd586-ab15-4a91-94c3-9aa30eee46bd",
+              "signalGroupIds": [
+                "7dc14914-b79e-4665-a29e-ecb9fafab288"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "d40325b4-ec09-42b2-bd19-a664099b8658",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "f0c00f0b-0eb4-463d-9415-397cd6daabde",
+              "toLaneId": "ca6bed9a-5fcd-451a-b296-3fe25779ba7a",
+              "signalGroupIds": [
+                "ffe59b36-5e07-42fd-821e-dc4d623ddad2"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "9415fad2-7a0d-4b07-b9a1-dc05c15a989f",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "f08e1b6d-7af3-4519-8f81-5fcac7303c42",
+              "toLaneId": "a64a7061-21a9-4e7d-8361-ecc69d0333d2",
+              "signalGroupIds": [
+                "c446d129-8257-428d-a467-ddf0bf7ad1d8"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            }
+          ],
+          "crossings": [],
+          "islands": []
+        }
+      ],
+      "signalGroups": [
+        {
+          "id": "d0b4afbe-2191-4f49-97f5-33365cc35cd7",
+          "name": "SG1",
+          "type": "vehicle",
+          "number": 1,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 416.4,
+            "y": 233.7
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "7dc14914-b79e-4665-a29e-ecb9fafab288",
+          "name": "SG2",
+          "type": "vehicle",
+          "number": 2,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 647,
+            "y": 118.1
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "ffe59b36-5e07-42fd-821e-dc4d623ddad2",
+          "name": "SG3",
+          "type": "vehicle",
+          "number": 3,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 607.9,
+            "y": -79.2
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "c446d129-8257-428d-a467-ddf0bf7ad1d8",
+          "name": "SG4",
+          "type": "vehicle",
+          "number": 4,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 361.1,
+            "y": 10.8
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        }
+      ],
+      "detectors": [],
+      "reportingPoints": [],
+      "refPoints": [
+        {
+          "canvas": {
+            "x": 297.5,
+            "y": 16.5
+          },
+          "lat": 48.959181809557556,
+          "lon": 11.675455735814605,
+          "set": true
+        },
+        {
+          "canvas": {
+            "x": -4,
+            "y": 234
+          },
+          "lat": 48.95905501145015,
+          "lon": 11.675552292796398,
+          "set": true
+        }
+      ],
+      "background": {
+        "image": null,
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0,
+        "opacity": 0.6,
+        "visible": true,
+        "locked": false
+      },
+      "matrices": {
+        "conflict": {
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>7dc14914-b79e-4665-a29e-ecb9fafab288": "conflict",
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>d0b4afbe-2191-4f49-97f5-33365cc35cd7": "conflict",
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>c446d129-8257-428d-a467-ddf0bf7ad1d8": "conflict",
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>d0b4afbe-2191-4f49-97f5-33365cc35cd7": "conflict",
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>ffe59b36-5e07-42fd-821e-dc4d623ddad2": "conflict",
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>7dc14914-b79e-4665-a29e-ecb9fafab288": "conflict",
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>c446d129-8257-428d-a467-ddf0bf7ad1d8": "conflict",
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>ffe59b36-5e07-42fd-821e-dc4d623ddad2": "conflict"
+        },
+        "intergreen": {
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>7dc14914-b79e-4665-a29e-ecb9fafab288": 4,
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>d0b4afbe-2191-4f49-97f5-33365cc35cd7": 3,
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>c446d129-8257-428d-a467-ddf0bf7ad1d8": 3,
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>d0b4afbe-2191-4f49-97f5-33365cc35cd7": 4,
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>ffe59b36-5e07-42fd-821e-dc4d623ddad2": 4,
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>7dc14914-b79e-4665-a29e-ecb9fafab288": 4,
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>c446d129-8257-428d-a467-ddf0bf7ad1d8": 4,
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>ffe59b36-5e07-42fd-821e-dc4d623ddad2": 3
+        },
+        "offset": {}
+      },
+      "intergreenSettings": {
+        "vehicleLengthCarM": 6,
+        "vehicleLengthHgvM": 10,
+        "vehicleLengthBicycleM": 2,
+        "speedCarMs": 13.88,
+        "speedTurnMs": 8.33,
+        "speedPedestrianMs": 1.2,
+        "speedBicycleMs": 4,
+        "yellowTimeS": 3
+      },
+      "stages": [
+        {
+          "id": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+          "name": "Stage 1",
+          "greenGroupIds": [
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7",
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2"
+          ],
+          "locked": false,
+          "durationS": 10,
+          "minS": 5,
+          "maxS": 60,
+          "signalGroupStates": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": "free",
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": "locked",
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": "free",
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": "locked"
+          }
+        },
+        {
+          "id": "d4426e75-d9ef-4443-b491-82f216e8072a",
+          "name": "Stage 2",
+          "greenGroupIds": [
+            "7dc14914-b79e-4665-a29e-ecb9fafab288",
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8"
+          ],
+          "locked": false,
+          "durationS": 10,
+          "minS": 5,
+          "maxS": 60,
+          "signalGroupStates": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": "locked",
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": "free",
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": "locked",
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": "free"
+          }
+        }
+      ],
+      "transitions": [
+        {
+          "id": "d216029e-aeb9-4f9a-ac6b-948eb3461526",
+          "fromStageId": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+          "toStageId": "d4426e75-d9ef-4443-b491-82f216e8072a",
+          "intergreenS": 4,
+          "durationS": 17,
+          "switchingTimes": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": 5,
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": 5,
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": 12,
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": 12
+          },
+          "switchingPoints": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ],
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ]
+          },
+          "calculated": true,
+          "logicConditions": []
+        },
+        {
+          "id": "68ea075e-f7ac-433f-ae7a-ae6bdfb016bb",
+          "fromStageId": "d4426e75-d9ef-4443-b491-82f216e8072a",
+          "toStageId": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+          "intergreenS": 4,
+          "durationS": 17,
+          "switchingTimes": {
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": 5,
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": 5,
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": 12,
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": 12
+          },
+          "switchingPoints": {
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ],
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ]
+          },
+          "calculated": true,
+          "logicConditions": []
+        }
+      ],
+      "transitionConditionInputs": [],
+      "volumeFlows": [],
+      "greenWaves": [],
+      "signalGroupTemplates": {
+        "vehicle": {
+          "id": "template-vehicle",
+          "name": "Vehicle",
+          "type": "vehicle",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "pedestrian": {
+          "id": "template-pedestrian",
+          "name": "Pedestrian",
+          "type": "pedestrian",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 2,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "cycle": {
+          "id": "template-cycle",
+          "name": "Cyclist",
+          "type": "cycle",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 2,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "publicTransport": {
+          "id": "template-publicTransport",
+          "name": "Public Transport",
+          "type": "publicTransport",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [],
+          "lockedSignalSequence": [],
+          "normalSignalSequence": [],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        }
+      },
+      "programs": [
+        {
+          "id": "c5c77a78-4eb4-44be-bdf0-9baef32c87cf",
+          "number": 2,
+          "name": "Program 2 (Auto)",
+          "cycleTimeS": 90,
+          "offsetS": 0,
+          "stages": [
+            {
+              "stageId": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+              "greenS": 10
+            },
+            {
+              "stageId": "d4426e75-d9ef-4443-b491-82f216e8072a",
+              "greenS": 46
+            }
+          ],
+          "startShiftS": 54
+        }
+      ],
+      "trafficLogic": {
+        "source": "// Verkehrsabhängige Logik – wird jeden Takt (100 ms) ausgewertet.\nconst MIN_GREEN = 8;     // Sekunden\nconst MAX_GREEN = 40;\nconst GAP_LIMIT = 3.0;   // Zeitlücke für Grünende\nvar extensions = 0;\n\nlogic {\n  if stage == Stage_1 {\n    if stageTime < MIN_GREEN {\n      hold;\n    } else if stageTime >= MAX_GREEN {\n      switch Stage_2;\n    } else if gap(D1) < GAP_LIMIT {\n      extend SG1 by 1;\n      extensions = extensions + 1;\n    } else {\n      switch Stage_2;\n    }\n  } else if stage == Stage_2 and stageTime >= MIN_GREEN {\n    if occupied(D1) or count(D1) >= 3 {\n      switch Stage_1;\n    }\n  }\n}\n"
+      },
+      "visualSettings": {
+        "defaultsInitialized": true,
+        "profiles": [
+          {
+            "id": "vis-red",
+            "name": "Red",
+            "signalState": {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "MiddleHorizontalLine",
+                "color": "#ff2816",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              }
+            ]
+          },
+          {
+            "id": "vis-amber",
+            "name": "Amber",
+            "signalState": {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#f7b500",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          },
+          {
+            "id": "vis-green",
+            "name": "Green",
+            "signalState": {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "TopBorder",
+                "color": "#00962a",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#00962a",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#00962a",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#00962a",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "DurationTextCentered",
+                "color": "#00962a",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Filled",
+                "color": "#004213",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              }
+            ]
+          },
+          {
+            "id": "vis-redamber",
+            "name": "RedAmber",
+            "signalState": {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#f7b500",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "MiddleHorizontalLine",
+                "color": "#c70001",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 7,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          },
+          {
+            "id": "vis-dark",
+            "name": "Dark",
+            "signalState": {
+              "chambers": [
+                "off",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#3d3d3d",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "DiagonalMirroredY",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 7,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "project": {
+        "id": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+        "name": "Controller 3",
+        "description": "# Project Readme\nWelcome to your traffic light controller project.",
+        "updatedAt": "2026-11-13T12:39:13.794Z",
+        "junctionId": "j1"
+      },
+      "junctions": [
+        {
+          "id": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+          "name": "J1",
+          "center": {
+            "x": 516,
+            "y": 91
+          },
+          "legs": [
+            {
+              "id": "1939c133-a7dd-4af2-b67f-187da9a72e2b",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 1",
+              "number": 1,
+              "start": {
+                "x": 765.3829987672394,
+                "y": 327.547109124808
+              },
+              "end": {
+                "x": 584,
+                "y": 155.5
+              },
+              "lanesIn": [
+                "e9ea3eab-a0a6-4369-8f31-0e823a85823c"
+              ],
+              "lanesOut": [
+                "a64a7061-21a9-4e7d-8361-ecc69d0333d2"
+              ]
+            },
+            {
+              "id": "a81dae0c-0873-4cf5-aa53-5b0849094b09",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 2",
+              "number": 2,
+              "start": {
+                "x": 256.860772043835,
+                "y": -231.34391770157106
+              },
+              "end": {
+                "x": 413.5,
+                "y": -36.5
+              },
+              "lanesIn": [
+                "f08e1b6d-7af3-4519-8f81-5fcac7303c42"
+              ],
+              "lanesOut": [
+                "6a8fd586-ab15-4a91-94c3-9aa30eee46bd"
+              ]
+            },
+            {
+              "id": "bca1dc02-bd50-4431-ac7c-89860fc6e921",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 3",
+              "number": 3,
+              "start": {
+                "x": 847.2692960153736,
+                "y": -189.57684146497843
+              },
+              "end": {
+                "x": 656.5,
+                "y": -28
+              },
+              "lanesIn": [
+                "f0c00f0b-0eb4-463d-9415-397cd6daabde"
+              ],
+              "lanesOut": [
+                "0df49202-5e22-45a7-92a9-24004cb17d07"
+              ]
+            },
+            {
+              "id": "c0452c55-005c-4fcc-a643-6c07df2fe97e",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Arm 4",
+              "number": 4,
+              "start": {
+                "x": 162.66966502877358,
+                "y": 305.0244681366927
+              },
+              "end": {
+                "x": 376.5,
+                "y": 175.5
+              },
+              "lanesIn": [
+                "2f72aa78-df36-4ef1-8225-61e981b09ac0"
+              ],
+              "lanesOut": [
+                "ca6bed9a-5fcd-451a-b296-3fe25779ba7a"
+              ]
+            }
+          ],
+          "lanes": [
+            {
+              "id": "e9ea3eab-a0a6-4369-8f31-0e823a85823c",
+              "legId": "1939c133-a7dd-4af2-b67f-187da9a72e2b",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "a64a7061-21a9-4e7d-8361-ecc69d0333d2",
+              "legId": "1939c133-a7dd-4af2-b67f-187da9a72e2b",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "f08e1b6d-7af3-4519-8f81-5fcac7303c42",
+              "legId": "a81dae0c-0873-4cf5-aa53-5b0849094b09",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "6a8fd586-ab15-4a91-94c3-9aa30eee46bd",
+              "legId": "a81dae0c-0873-4cf5-aa53-5b0849094b09",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "f0c00f0b-0eb4-463d-9415-397cd6daabde",
+              "legId": "bca1dc02-bd50-4431-ac7c-89860fc6e921",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "0df49202-5e22-45a7-92a9-24004cb17d07",
+              "legId": "bca1dc02-bd50-4431-ac7c-89860fc6e921",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "2f72aa78-df36-4ef1-8225-61e981b09ac0",
+              "legId": "c0452c55-005c-4fcc-a643-6c07df2fe97e",
+              "direction": "in",
+              "label": "Approach 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "id": "ca6bed9a-5fcd-451a-b296-3fe25779ba7a",
+              "legId": "c0452c55-005c-4fcc-a643-6c07df2fe97e",
+              "direction": "out",
+              "label": "Exit 1",
+              "widthM": 3.5,
+              "allowedManoeuvres": [
+                "straight"
+              ],
+              "d1": {
+                "x": 0,
+                "y": 0
+              },
+              "d2": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "connectors": [
+            {
+              "id": "5351e48f-3904-4ed6-b6e7-3ba121b2bd2b",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "2f72aa78-df36-4ef1-8225-61e981b09ac0",
+              "toLaneId": "0df49202-5e22-45a7-92a9-24004cb17d07",
+              "signalGroupIds": [
+                "d0b4afbe-2191-4f49-97f5-33365cc35cd7"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "24dbba16-1a85-42b3-840e-352eaf2eb699",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "e9ea3eab-a0a6-4369-8f31-0e823a85823c",
+              "toLaneId": "6a8fd586-ab15-4a91-94c3-9aa30eee46bd",
+              "signalGroupIds": [
+                "7dc14914-b79e-4665-a29e-ecb9fafab288"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "d40325b4-ec09-42b2-bd19-a664099b8658",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "f0c00f0b-0eb4-463d-9415-397cd6daabde",
+              "toLaneId": "ca6bed9a-5fcd-451a-b296-3fe25779ba7a",
+              "signalGroupIds": [
+                "ffe59b36-5e07-42fd-821e-dc4d623ddad2"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            },
+            {
+              "id": "9415fad2-7a0d-4b07-b9a1-dc05c15a989f",
+              "junctionId": "faccad36-39b4-433c-9ea0-afdaacb1ab80",
+              "name": "Approach 1 → Exit 1",
+              "fromLaneId": "f08e1b6d-7af3-4519-8f81-5fcac7303c42",
+              "toLaneId": "a64a7061-21a9-4e7d-8361-ecc69d0333d2",
+              "signalGroupIds": [
+                "c446d129-8257-428d-a467-ddf0bf7ad1d8"
+              ],
+              "widthM": 3,
+              "tweak": 0,
+              "via": []
+            }
+          ],
+          "crossings": [],
+          "islands": []
+        }
+      ],
+      "signalGroups": [
+        {
+          "id": "d0b4afbe-2191-4f49-97f5-33365cc35cd7",
+          "name": "SG1",
+          "type": "vehicle",
+          "number": 1,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 416.4,
+            "y": 233.7
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "7dc14914-b79e-4665-a29e-ecb9fafab288",
+          "name": "SG2",
+          "type": "vehicle",
+          "number": 2,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 647,
+            "y": 118.1
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "ffe59b36-5e07-42fd-821e-dc4d623ddad2",
+          "name": "SG3",
+          "type": "vehicle",
+          "number": 3,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 607.9,
+            "y": -79.2
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        },
+        {
+          "id": "c446d129-8257-428d-a467-ddf0bf7ad1d8",
+          "name": "SG4",
+          "type": "vehicle",
+          "number": 4,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": {
+            "x": 361.1,
+            "y": 10.8
+          },
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          }
+        }
+      ],
+      "detectors": [],
+      "reportingPoints": [],
+      "refPoints": [
+        {
+          "canvas": {
+            "x": 297.5,
+            "y": 16.5
+          },
+          "lat": 48.960344095693934,
+          "lon": 11.672381867642441,
+          "set": true
+        },
+        {
+          "canvas": {
+            "x": -4,
+            "y": 234
+          },
+          "lat": 48.96018208308601,
+          "lon": 11.672746659653917,
+          "set": true
+        }
+      ],
+      "background": {
+        "image": null,
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0,
+        "opacity": 0.6,
+        "visible": true,
+        "locked": false
+      },
+      "matrices": {
+        "conflict": {
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>7dc14914-b79e-4665-a29e-ecb9fafab288": "conflict",
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>d0b4afbe-2191-4f49-97f5-33365cc35cd7": "conflict",
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>c446d129-8257-428d-a467-ddf0bf7ad1d8": "conflict",
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>d0b4afbe-2191-4f49-97f5-33365cc35cd7": "conflict",
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>ffe59b36-5e07-42fd-821e-dc4d623ddad2": "conflict",
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>7dc14914-b79e-4665-a29e-ecb9fafab288": "conflict",
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>c446d129-8257-428d-a467-ddf0bf7ad1d8": "conflict",
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>ffe59b36-5e07-42fd-821e-dc4d623ddad2": "conflict"
+        },
+        "intergreen": {
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>7dc14914-b79e-4665-a29e-ecb9fafab288": 4,
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>d0b4afbe-2191-4f49-97f5-33365cc35cd7": 3,
+          "d0b4afbe-2191-4f49-97f5-33365cc35cd7>c446d129-8257-428d-a467-ddf0bf7ad1d8": 3,
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>d0b4afbe-2191-4f49-97f5-33365cc35cd7": 4,
+          "7dc14914-b79e-4665-a29e-ecb9fafab288>ffe59b36-5e07-42fd-821e-dc4d623ddad2": 4,
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>7dc14914-b79e-4665-a29e-ecb9fafab288": 4,
+          "ffe59b36-5e07-42fd-821e-dc4d623ddad2>c446d129-8257-428d-a467-ddf0bf7ad1d8": 4,
+          "c446d129-8257-428d-a467-ddf0bf7ad1d8>ffe59b36-5e07-42fd-821e-dc4d623ddad2": 3
+        },
+        "offset": {}
+      },
+      "intergreenSettings": {
+        "vehicleLengthCarM": 6,
+        "vehicleLengthHgvM": 10,
+        "vehicleLengthBicycleM": 2,
+        "speedCarMs": 13.88,
+        "speedTurnMs": 8.33,
+        "speedPedestrianMs": 1.2,
+        "speedBicycleMs": 4,
+        "yellowTimeS": 3
+      },
+      "stages": [
+        {
+          "id": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+          "name": "Stage 1",
+          "greenGroupIds": [
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7",
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2"
+          ],
+          "locked": false,
+          "durationS": 10,
+          "minS": 5,
+          "maxS": 60,
+          "signalGroupStates": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": "free",
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": "locked",
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": "free",
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": "locked"
+          }
+        },
+        {
+          "id": "d4426e75-d9ef-4443-b491-82f216e8072a",
+          "name": "Stage 2",
+          "greenGroupIds": [
+            "7dc14914-b79e-4665-a29e-ecb9fafab288",
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8"
+          ],
+          "locked": false,
+          "durationS": 10,
+          "minS": 5,
+          "maxS": 60,
+          "signalGroupStates": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": "locked",
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": "free",
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": "locked",
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": "free"
+          }
+        }
+      ],
+      "transitions": [
+        {
+          "id": "d216029e-aeb9-4f9a-ac6b-948eb3461526",
+          "fromStageId": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+          "toStageId": "d4426e75-d9ef-4443-b491-82f216e8072a",
+          "intergreenS": 4,
+          "durationS": 17,
+          "switchingTimes": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": 5,
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": 5,
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": 12,
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": 12
+          },
+          "switchingPoints": {
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ],
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ]
+          },
+          "calculated": true,
+          "logicConditions": []
+        },
+        {
+          "id": "68ea075e-f7ac-433f-ae7a-ae6bdfb016bb",
+          "fromStageId": "d4426e75-d9ef-4443-b491-82f216e8072a",
+          "toStageId": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+          "intergreenS": 4,
+          "durationS": 17,
+          "switchingTimes": {
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": 5,
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": 5,
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": 12,
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": 12
+          },
+          "switchingPoints": {
+            "7dc14914-b79e-4665-a29e-ecb9fafab288": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "c446d129-8257-428d-a467-ddf0bf7ad1d8": [
+              {
+                "chambers": [
+                  "off",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 0
+              },
+              {
+                "chambers": [
+                  "on",
+                  "off",
+                  "off"
+                ],
+                "offsetMs": 5000
+              }
+            ],
+            "d0b4afbe-2191-4f49-97f5-33365cc35cd7": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ],
+            "ffe59b36-5e07-42fd-821e-dc4d623ddad2": [
+              {
+                "chambers": [
+                  "on",
+                  "on",
+                  "off"
+                ],
+                "offsetMs": 10000
+              },
+              {
+                "chambers": [
+                  "off",
+                  "off",
+                  "on"
+                ],
+                "offsetMs": 12000
+              }
+            ]
+          },
+          "calculated": true,
+          "logicConditions": []
+        }
+      ],
+      "transitionConditionInputs": [],
+      "volumeFlows": [],
+      "greenWaves": [],
+      "signalGroupTemplates": {
+        "vehicle": {
+          "id": "template-vehicle",
+          "name": "Vehicle",
+          "type": "vehicle",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": true,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 2000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "pedestrian": {
+          "id": "template-pedestrian",
+          "name": "Pedestrian",
+          "type": "pedestrian",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 2,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "cycle": {
+          "id": "template-cycle",
+          "name": "Cyclist",
+          "type": "cycle",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 2,
+          "freeSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "lockedSignalSequence": [
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": false,
+              "minimumDurationMs": 0,
+              "maximumDurationS": 999
+            }
+          ],
+          "normalSignalSequence": [
+            {
+              "chambers": [
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 5000,
+              "maximumDurationS": 999
+            },
+            {
+              "chambers": [
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            }
+          ],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        },
+        "publicTransport": {
+          "id": "template-publicTransport",
+          "name": "Public Transport",
+          "type": "publicTransport",
+          "number": 0,
+          "laneIds": [],
+          "minGreenS": 5,
+          "minRedS": 0,
+          "pos": null,
+          "partialIntersection": 1,
+          "isMainDirection": false,
+          "signalCount": 3,
+          "freeSignalSequence": [],
+          "lockedSignalSequence": [],
+          "normalSignalSequence": [],
+          "switchedOffState": {
+            "chambers": [
+              "off",
+              "off",
+              "off"
+            ],
+            "isTransition": false,
+            "hasMinimumDuration": false,
+            "minimumDurationMs": 0,
+            "maximumDurationS": 999
+          },
+          "colors": {
+            "red": "#ff2816",
+            "amber": "#f7b500",
+            "green": "#00c035"
+          }
+        }
+      },
+      "programs": [
+        {
+          "id": "c5c77a78-4eb4-44be-bdf0-9baef32c87cf",
+          "number": 2,
+          "name": "Program 2 (Auto)",
+          "cycleTimeS": 90,
+          "offsetS": 0,
+          "stages": [
+            {
+              "stageId": "04a57981-572c-4f93-a4dd-902ac45c52a6",
+              "greenS": 10
+            },
+            {
+              "stageId": "d4426e75-d9ef-4443-b491-82f216e8072a",
+              "greenS": 46
+            }
+          ],
+          "startShiftS": 44
+        }
+      ],
+      "trafficLogic": {
+        "source": "// Verkehrsabhängige Logik – wird jeden Takt (100 ms) ausgewertet.\nconst MIN_GREEN = 8;     // Sekunden\nconst MAX_GREEN = 40;\nconst GAP_LIMIT = 3.0;   // Zeitlücke für Grünende\nvar extensions = 0;\n\nlogic {\n  if stage == Stage_1 {\n    if stageTime < MIN_GREEN {\n      hold;\n    } else if stageTime >= MAX_GREEN {\n      switch Stage_2;\n    } else if gap(D1) < GAP_LIMIT {\n      extend SG1 by 1;\n      extensions = extensions + 1;\n    } else {\n      switch Stage_2;\n    }\n  } else if stage == Stage_2 and stageTime >= MIN_GREEN {\n    if occupied(D1) or count(D1) >= 3 {\n      switch Stage_1;\n    }\n  }\n}\n"
+      },
+      "visualSettings": {
+        "defaultsInitialized": true,
+        "profiles": [
+          {
+            "id": "vis-red",
+            "name": "Red",
+            "signalState": {
+              "chambers": [
+                "on",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "MiddleHorizontalLine",
+                "color": "#ff2816",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              }
+            ]
+          },
+          {
+            "id": "vis-amber",
+            "name": "Amber",
+            "signalState": {
+              "chambers": [
+                "off",
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#f7b500",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          },
+          {
+            "id": "vis-green",
+            "name": "Green",
+            "signalState": {
+              "chambers": [
+                "off",
+                "off",
+                "on"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "TopBorder",
+                "color": "#00962a",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#00962a",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#00962a",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#00962a",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "DurationTextCentered",
+                "color": "#00962a",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Filled",
+                "color": "#004213",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              }
+            ]
+          },
+          {
+            "id": "vis-redamber",
+            "name": "RedAmber",
+            "signalState": {
+              "chambers": [
+                "on",
+                "on",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#f7b500",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "MiddleHorizontalLine",
+                "color": "#c70001",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 7,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          },
+          {
+            "id": "vis-dark",
+            "name": "Dark",
+            "signalState": {
+              "chambers": [
+                "off",
+                "off",
+                "off"
+              ],
+              "isTransition": false,
+              "hasMinimumDuration": true,
+              "minimumDurationMs": 1000,
+              "maximumDurationS": 999
+            },
+            "layers": [
+              {
+                "pattern": "Filled",
+                "color": "#3d3d3d",
+                "zIndex": 1,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": true
+              },
+              {
+                "pattern": "Diagonal",
+                "color": "#000000",
+                "zIndex": 2,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "DiagonalMirroredY",
+                "color": "#000000",
+                "zIndex": 3,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "TopBorder",
+                "color": "#000000",
+                "zIndex": 4,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "BottomBorder",
+                "color": "#000000",
+                "zIndex": 5,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "LeftBorder",
+                "color": "#000000",
+                "zIndex": 6,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              },
+              {
+                "pattern": "RightBorder",
+                "color": "#000000",
+                "zIndex": 7,
+                "isActive": true,
+                "startWithOn": true,
+                "isBold": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "selectedControllerIds": [
+    "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+    "25171898-6837-4d48-84b0-c8857eeee186"
+  ],
+  "openControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+  "greenWave": {
+    "controllerIds": [
+      "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+      "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+      "25171898-6837-4d48-84b0-c8857eeee186"
+    ],
+    "selections": [
+      {
+        "controllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+        "programNumber": 2,
+        "partialIntersection": 1,
+        "entranceSgNumber": 3,
+        "exitSgNumber": 1
+      },
+      {
+        "controllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "programNumber": 2,
+        "partialIntersection": 1,
+        "entranceSgNumber": null,
+        "exitSgNumber": null
+      },
+      {
+        "controllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+        "programNumber": 2,
+        "partialIntersection": 1,
+        "entranceSgNumber": 3,
+        "exitSgNumber": 1
+      }
+    ],
+    "links": [
+      {
+        "id": "481cd04f-fb77-48e3-83cc-154d26338629",
+        "sourceControllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+        "targetControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "speedKph": 50,
+        "travelSecondsOverride": 0
+      },
+      {
+        "id": "ed5383d1-989e-45ea-aa59-9bad461c8efc",
+        "sourceControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "targetControllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+        "speedKph": 50,
+        "travelSecondsOverride": 0
+      },
+      {
+        "id": "5602cb1a-642e-4019-88f8-68b806615dc7",
+        "sourceControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "targetControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+        "speedKph": 50,
+        "travelSecondsOverride": 0
+      },
+      {
+        "id": "a70f9fe2-23af-410b-866c-5c6de5566ffa",
+        "sourceControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+        "targetControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "speedKph": 50,
+        "travelSecondsOverride": 0
+      }
+    ],
+    "cycleS": 90,
+    "cycleCount": 1,
+    "id": "60df89a1-9077-4019-a084-c0b37736980e",
+    "name": "Green Wave 3"
+  },
+  "greenWaves": [
+    {
+      "controllerIds": [
+        "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "25171898-6837-4d48-84b0-c8857eeee186"
+      ],
+      "selections": [
+        {
+          "controllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "programNumber": 1,
+          "partialIntersection": 1,
+          "entranceSgNumber": 1,
+          "exitSgNumber": 2
+        },
+        {
+          "controllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "programNumber": 2,
+          "partialIntersection": 1,
+          "entranceSgNumber": 1,
+          "exitSgNumber": 2
+        }
+      ],
+      "links": [],
+      "cycleS": 90,
+      "cycleCount": 1,
+      "id": "61bfba97-46fb-4f9f-9e59-97f415cc2989",
+      "name": "Green Wave 1"
+    },
+    {
+      "controllerIds": [
+        "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "25171898-6837-4d48-84b0-c8857eeee186",
+        "da5f6859-9fdc-4799-9dfa-ae00691ea667"
+      ],
+      "selections": [
+        {
+          "controllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "programNumber": 2,
+          "partialIntersection": 1,
+          "entranceSgNumber": 3,
+          "exitSgNumber": 4
+        },
+        {
+          "controllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "programNumber": 2,
+          "partialIntersection": 1,
+          "entranceSgNumber": null,
+          "exitSgNumber": null
+        },
+        {
+          "controllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+          "programNumber": 2,
+          "partialIntersection": 1,
+          "entranceSgNumber": 1,
+          "exitSgNumber": 3
+        }
+      ],
+      "links": [
+        {
+          "id": "e4b203d1-315f-413c-b8b1-fed4295f13a8",
+          "sourceControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "targetControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        },
+        {
+          "id": "5f3ae0fe-5171-46bf-adaa-953dee66d329",
+          "sourceControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "targetControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        },
+        {
+          "id": "511bf012-5127-44c1-bb1d-35a64993978d",
+          "sourceControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "targetControllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        },
+        {
+          "id": "606b386a-776d-4bda-bf4b-ebe8dac53c20",
+          "sourceControllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+          "targetControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        }
+      ],
+      "cycleS": 90,
+      "cycleCount": 1,
+      "id": "5d3cf7d8-7653-4d1f-bf4d-cf32c5ab30cd",
+      "name": "Green Wave 2"
+    },
+    {
+      "controllerIds": [
+        "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+        "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "25171898-6837-4d48-84b0-c8857eeee186"
+      ],
+      "selections": [
+        {
+          "controllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+          "programNumber": 2,
+          "partialIntersection": 1,
+          "entranceSgNumber": 3,
+          "exitSgNumber": 1
+        },
+        {
+          "controllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "programNumber": 2,
+          "partialIntersection": 1,
+          "entranceSgNumber": null,
+          "exitSgNumber": null
+        },
+        {
+          "controllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "programNumber": 2,
+          "partialIntersection": 1,
+          "entranceSgNumber": 3,
+          "exitSgNumber": 1
+        }
+      ],
+      "links": [
+        {
+          "id": "481cd04f-fb77-48e3-83cc-154d26338629",
+          "sourceControllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+          "targetControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        },
+        {
+          "id": "ed5383d1-989e-45ea-aa59-9bad461c8efc",
+          "sourceControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "targetControllerId": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        },
+        {
+          "id": "5602cb1a-642e-4019-88f8-68b806615dc7",
+          "sourceControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "targetControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        },
+        {
+          "id": "a70f9fe2-23af-410b-866c-5c6de5566ffa",
+          "sourceControllerId": "25171898-6837-4d48-84b0-c8857eeee186",
+          "targetControllerId": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+          "speedKph": 50,
+          "travelSecondsOverride": 0
+        }
+      ],
+      "cycleS": 90,
+      "cycleCount": 1,
+      "id": "60df89a1-9077-4019-a084-c0b37736980e",
+      "name": "Green Wave 3"
+    }
+  ],
+  "network": {
+    "roads": [
+      {
+        "id": "6b5d5312-65d8-4a65-b3bc-d3e4537f1b29",
+        "a": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "b": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+        "armA": null,
+        "armB": null,
+        "lengthM": null,
+        "speedAB": 50,
+        "speedBA": 50
+      },
+      {
+        "id": "6504f15e-966b-4bfc-88a1-1cacd867a9ba",
+        "a": "46a5d7af-f300-4c35-bfeb-9d50b09723f1",
+        "b": "25171898-6837-4d48-84b0-c8857eeee186",
+        "armA": null,
+        "armB": null,
+        "lengthM": null,
+        "speedAB": 50,
+        "speedBA": 50
+      },
+      {
+        "id": "7ce5760a-07fb-4141-b7a9-b74c0742805b",
+        "a": "25171898-6837-4d48-84b0-c8857eeee186",
+        "b": "da5f6859-9fdc-4799-9dfa-ae00691ea667",
+        "armA": null,
+        "armB": null,
+        "lengthM": null,
+        "speedAB": 50,
+        "speedBA": 50
+      }
+    ],
+    "positions": {}
+  },
+  "activeGreenWaveId": "60df89a1-9077-4019-a084-c0b37736980e"
+}

@@ -1,0 +1,1 @@
+import"../chunks/CwxdPxhh.js";import"../chunks/xihTtKlq.js";import{t as e}from"../chunks/BTRbfI49.js";function t(t){e(t,{title:`Git`,hint:`Snapshot history of the workspace (timeline of saved states).`})}export{t as component};
